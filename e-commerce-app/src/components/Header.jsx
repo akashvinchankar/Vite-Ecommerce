@@ -12,7 +12,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCartSharp';
 
 export default function Header() {
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Toolbar>
         <Typography variant="h6" color="inherit" sx={{ flexGrow: 1 }}>
           Ecom
@@ -20,7 +20,7 @@ export default function Header() {
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           <IconButton
             size="large"
-            aria-label="shows cart items cout"
+            aria-label="shows cart items count"
             color="inherit"
           >
             <Badge badgeContent={1} color="error">
